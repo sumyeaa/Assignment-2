@@ -7,20 +7,46 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <header>
+<body class="w-full">
+      <header class="lg:max-w-[1600px] w-full h-full">
         <nav class="pt-6 pb-6 flex justify-around bg-purple-950 items-center">
             <h3 class="font-extrabold text-5xl text-amber-50">Tech<span class="text-purple-500">Wave</span></h3>
-            <div class="">
-                <ul class="text-white text-lg flex  gap-8 text-[16px] leading-[1.2]">
+                <ul class="hidden lg:block lg: text-white lg:text-lg lg:flex  lg:gap-8 lg:text-[16px] lg:leading-[1.2]">
                     <li><a href="">About</a></li>
                     <li><a href="">Episodes</a></li>
                     <li><a href="">Host</a></li>
                 </ul>
-            </div>
-            <button class="text-lg text-white bg-gradient-to-r from-yellow-500 from-0% via-pink-800 via-51% to-purple-800 to-100% ... rounded-4xl p-4 hover:from-green-700  cursor-pointer">Subscribe<i class="fa-solid fa-arrow-right"></i></button>
+            <button class="lg:text-lg lg: text-white lg:bg-gradient-to-r from-yellow-500 from-0% via-pink-800 via-51% to-purple-800 to-100% ... rounded-4xl p-4 hover:from-green-700  lg:cursor-pointer lg:block hidden">Subscribe<i class="fa-solid fa-arrow-right"></i></button>
+            <div class="lg:hidden text-amber-50 cursor-pointer"><i class="fa-solid fa-bars"></i></div>
         </nav>
-            
+        <section class="h-[70vh] sm:h-screen lg:h-[760px] overflow-hidden">
+        <!-- background-image -->
+        <div class="w-full h-full items-center justify-center bg-no-repeat bg-contain bg-center sm:bg-cover lg:bg-cover" style="background-image: url(./assets/hero-bg.png);">
+             
+            <!-- image-div -->
+            <div class="relative w-52 md:w-65 md:translate-x-96 md:translate-y-20 lg:w-96 lg:translate-x-10/6 lg:translate-y-30">
+                <!-- circle img  -->
+                <img class="animate-pulse delay-500 relative w-25  lg:w-80" src="./assets/hero-circle.png" alt="">
+                <!-- new btn  -->
+                <button class="bg-green-400 rounded-3xl p-2 top-4 left-2/3 lg:top-8 lg:right-15 absolute animate-pulse">new</button>
+                <!-- microphone  -->
+                <img class="animate-bounce absolute w-10 top-1/3 left-12 lg:w-20 lg:top-1/3 lg:left-1/3" src="./assets/microphone.png" alt="">
+            </div>
+
+            <!-- text div  -->
+            <div class="mx-auto w-1/2 text-center">
+                <h2 class="text-white text-2xl font-bold lg:text-6xl mt-40 mb-2 lg:font-extrabold">TechWave</h2>
+                <p class="text-white text-base mb-6">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+            </div>
+            <div class="mx-auto text-center">
+                <button class="text-lg text-white bg-gradient-to-r from-yellow-500 from-0% via-pink-800 via-51% to-purple-800 to-100% ... rounded-4xl p-4 hover:from-green-700  cursor-pointer"><i class="fa-brands fa-spotify"></i> Listen on Spotify</button>
+                <button class="text-lg p-4 bg-transparent border-green-400 border-2 rounded-4xl text-green-400 hover:bg-gray-500 cursor-pointer"><i class="bg-transparent fa-regular fa-envelope"></i> Subscribe</button>
+            </div>
+        </div>  
+   </section>
     </header>
+    <main>
+
+    </main>
 </body>
 </html>
